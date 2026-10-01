@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.pyc
+dist/
+preview/
+*.env
+*api_key*
+secrets/
+memory/
+agency/
+campaigns/
+assets/mockups/
+skill/eb-mail-produktion/scripts/footer/footer-dark-v2.html
+skill/eb-mail-produktion/scripts/footer/eb-email-footer-SKILL.md
+skill/eb-mail-produktion/assets/badges/*.png
+skill/eb-mail-produktion/assets/badges/fonts/
