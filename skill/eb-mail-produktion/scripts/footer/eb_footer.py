@@ -1,12 +1,12 @@
 """EB-Pflicht-Footer an eine Bild-Slice-Mail hängen (self-contained, unabhängig vom App-Profil).
 build(rows_html, preheader, title, 'dark'|'light', bg=None) -> komplettes HTML.
 DARK = Dark-Mode-sichere v2 (Buttons/Icons als Bilder, Hintergrund = Mail-Grundfarbe, Standard #0B0B0D).
-LIGHT = Footer-Block aus eb-email-footer-SKILL.md (Beige #FCF7EB).
-Benötigte eigene Dateien in diesem Ordner (nicht im öffentlichen Repo): footer-dark-v2.html, eb-email-footer-SKILL.md (siehe README.md)."""
+LIGHT = Footer-Block aus eb-email-footer.md (Beige #FCF7EB).
+Benötigte eigene Dateien in diesem Ordner (nicht im öffentlichen Repo): footer-dark-v2.html, eb-email-footer.md (siehe README.md)."""
 import glob, re, os
 HERE = os.path.dirname(os.path.abspath(__file__))
 def _skill_md():
-    local = os.path.join(HERE, 'eb-email-footer-SKILL.md')
+    local = os.path.join(HERE, 'eb-email-footer.md')
     hits = glob.glob(os.path.expanduser('~/Library/Application Support/Claude*/local-agent-mode-sessions/skills-plugin/*/*/skills/eb-email-footer/SKILL.md'))
     if hits:  # neueste Version aus der App bevorzugen, sonst gebündelte Kopie
         newest = max(hits, key=os.path.getmtime)
