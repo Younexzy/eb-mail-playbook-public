@@ -105,5 +105,5 @@ def apple():
 
 if __name__=='__main__':
     g=google(); a=apple()
-    g.save(f'badge-google-findhub-white@{S}x.png'); a.save(f'badge-apple-findmy-white@{S}x.png')
+    g.save(f'badge-google-findhub-white-{S}x.png'); a.save(f'badge-apple-findmy-white-{S}x.png')
     print(g.size,a.size)

@@ -19,7 +19,7 @@ if PB:
         chk(os.path.exists(os.path.join(PB, rel)), rel, 'Repo unvollständig → git pull')
     for rel in ['agency', 'campaigns', 'assets/mockups/src']:
         print('  ', '✅' if os.path.exists(os.path.join(PB, rel)) else '⚪', rel, '(eigene private Daten, optional)')
-print('  ', '✅' if os.path.exists(os.path.join(SKILL, 'assets/badges/badge-apple-findmy-white@2x.png')) else '⚪', 'Badges (weiß, optional, mit build_badges.py erzeugen)')
+print('  ', '✅' if os.path.exists(os.path.join(SKILL, 'assets/badges/badge-apple-findmy-white-2x.png')) else '⚪', 'Badges (weiß, optional, mit build_badges.py erzeugen)')
 sk = os.path.join(home, '.claude/skills/eb-mail-produktion/SKILL.md'); chk(os.path.exists(sk), 'Skill installiert (~/.claude/skills)', './scripts/install.sh')
 mems = [m for m in glob.glob(os.path.join(home, '.claude/projects/*/memory/MEMORY.md')) if 'eb-mail-produktion' in open(m).read()]
 key = '-' + PB.strip('/').replace('/', '-').replace('.', '-') if PB else ''
